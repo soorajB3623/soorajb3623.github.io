@@ -373,4 +373,13 @@ body {
     .myP {
         padding: 2%;
     }
+    .photo {
+        border: 1px solid #ddd;
+        border-radius: 80px;
+        width: 120px;
+        height: auto;
+        text-align: center;
+        left: 50%;
+        top: 0;
+    }
 }

@@ -94,6 +94,12 @@ h1 a {
 
 /*effect-underline*/
 
+.effect-underline {
+    margin-top: 8em;
+    text-align: center;
+    position: relative;
+}
+
 .effect-underline:after {
     content: '';
     position: absolute;
@@ -127,7 +133,49 @@ h1 a {
 }
 
 .about-para {
-    color: white;
     font-size: 20px;
     text-align: center;
+    color: white;
+    margin-top: 15em;
+    padding: 0px 170px
+}
+
+@media only screen and (max-width: 768px) {
+    .typewrite {
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        left: 22%;
+        top: 0;
+        margin-top: 30px;
+    }
+    .about-me img {
+        height: auto;
+        width: 50px;
+        left: 50%;
+        position: absolute;
+    }
+    button {
+        height: 40px;
+        width: 120px;
+        padding: 3px 3px;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: 2px;
+        border: 2px white solid;
+        border-radius: 10px;
+        left: 50%;
+    }
+    .effect-underline {
+        font-size: 21px;
+        margin-top: 0;
+        text-align: center;
+        position: relative;
+    }
+    .about-para {
+        position: relative;
+        font-size: 14px;
+        top: 60px;
+        margin-top: 9em;
+    }
 }
