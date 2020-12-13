@@ -1,20 +1,9 @@
-.typewrite {
-    text-decoration: none;
-    font-size: 60px;
-    color: white;
-    position: absolute;
-    left: 52%;
-    top: 3em;
-}
+
 
 button {
-    position: relative;
-    left: 65%;
-    display: block;
+    position: absolute;
     height: 80px;
     width: 180px;
-    margin: 10px 7px;
-    padding: 3px 3px;
     font-weight: 700;
     font-size: 24px;
     letter-spacing: 2px;
@@ -22,16 +11,13 @@ button {
     border: 2px white solid;
     border-radius: 10px;
     text-transform: uppercase;
-    outline: 0;
     overflow: hidden;
     background: none;
-    z-index: 1;
     cursor: pointer;
     transition: 0.08s ease-in;
-    -o-transition: 0.08s ease-in;
-    -ms-transition: 0.08s ease-in;
-    -moz-transition: 0.08s ease-in;
     -webkit-transition: 0.08s ease-in;
+    margin-left: 24em;
+    margin-top: 10px;
 }
 
 .slide:after {
@@ -48,7 +34,7 @@ button {
     content: "Download";
     height: 100%;
     width: 100%;
-    position: absolute;
+    
     color: black;
     left: -100%;
     opacity: 0;
@@ -75,8 +61,9 @@ button {
 }
 
 .wrapper {
-    display: block;
-    position: absolute;
+    display: grid;
+    position: relative;
+    justify-content: center;
     letter-spacing: 2px;
     left: 50%;
     margin-top: 15em;
@@ -88,14 +75,14 @@ h1 a {
     font-size: 1.3em;
     text-decoration: none;
     display: inline-block;
-    position: relative;
+    
 }
 
 
 /*effect-underline*/
 
 .effect-underline {
-    margin-top: 8em;
+   
     text-align: center;
     position: relative;
 }
@@ -136,18 +123,11 @@ h1 a {
     font-size: 20px;
     text-align: center;
     color: white;
-    margin-top: 15em;
+    margin-top: 1em;
     padding: 0px 170px
 }
 
 @media only screen and (max-width: 768px) {
-    .typewrite {
-        font-size: 25px;
-        position: relative;
-        top: 0;
-        margin-top: 30px;
-        left: 25%;
-    }
     .about-me img {
         height: auto;
         width: 75px;

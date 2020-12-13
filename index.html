@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/nav.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/box.css" type="text/css">
-    <link rel="stylesheet" href="css/card.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
@@ -30,7 +29,7 @@
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Interests</a></li>
                     <li><a href="#">Contact</a></li>
@@ -44,35 +43,34 @@
         </div>
     </nav>
 
-    <section class="home">
-    </section>
     <img class="photo" src="me.jpg" alt="">
 
-
-       <h3 class='name' style="color: white; font-size: 45px; margin-top: 45px;">Sooraj Bhaskaran</h3>
+       <h3 class='name' style="font-size: 45px; margin-top: 80px;">Sooraj Bhaskaran</h3>
+       <h3 class="name" style="font-size: 25px; margin: 15px 0px">Full Stack Developer</h3>
    
     <button class="slide">&nbsp;</button>
-    <div class="wrapper">
+    <div class="wrapper" id="about">
         <h1><a href="#" class="effect-underline">About
                 me</a>
         </h1>
     </div>
 
-    <p class="about-para">
+    <p class="about-para" >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-
-    <div class="wrapper">
-        <h1><a href="#" class="effect-underline" style="margin-top: 3em; position: relative;">My Interests</a></h1>
+    <div class="wrapper" id="about">
+        <h1><a href="#" class="effect-underline">My Interests</a>
+        </h1>
     </div>
+
 
    
    
 
 
     <!--.col-->
-    <div class="col text-center" style="text-align: center; position: relative;">
+    <div class="" style="bottom: 0px; text-align: center;">
         <br class="clearfix">
         <a href="#" class="snip1472"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="snip1472"><i class="fab fa-instagram"></i></a>
@@ -106,120 +104,7 @@
 
 });
     </script>
-    <script>
-        var TxtType = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-        };
-
-        TxtType.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-            var that = this;
-            var delta = 200 - Math.random() * 100;
-
-            if (this.isDeleting) {
-                delta /= 2;
-            }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function() {
-                that.tick();
-            }, delta);
-        };
-
-        window.onload = function() {
-            var elements = document.getElementsByClassName('typewrite');
-            for (var i = 0; i < elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-type');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-            document.body.appendChild(css);
-        };
-    </script>
-    <script>
-        // Input Lock
-        $('textarea').blur(function() {
-            $('#hire textarea').each(function() {
-                $this = $(this);
-                if (this.value != '') {
-                    $this.addClass('focused');
-                    $('textarea + label + span').css({
-                        'opacity': 1
-                    });
-                } else {
-                    $this.removeClass('focused');
-                    $('textarea + label + span').css({
-                        'opacity': 0
-                    });
-                }
-            });
-        });
-
-        $('#hire .field:first-child input').blur(function() {
-            $('#hire .field:first-child input').each(function() {
-                $this = $(this);
-                if (this.value != '') {
-                    $this.addClass('focused');
-                    $('.field:first-child input + label + span').css({
-                        'opacity': 1
-                    });
-                } else {
-                    $this.removeClass('focused');
-                    $('.field:first-child input + label + span').css({
-                        'opacity': 0
-                    });
-                }
-            });
-        });
-
-        $('#hire .field:nth-child(2) input').blur(function() {
-            $('#hire .field:nth-child(2) input').each(function() {
-                $this = $(this);
-                if (this.value != '') {
-                    $this.addClass('focused');
-                    $('.field:nth-child(2) input + label + span').css({
-                        'opacity': 1
-                    });
-                } else {
-                    $this.removeClass('focused');
-                    $('.field:nth-child(2) input + label + span').css({
-                        'opacity': 0
-                    });
-                }
-            });
-        });
-    </script>
-
+    
 
 
 
