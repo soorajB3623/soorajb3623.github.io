@@ -1,59 +1,24 @@
-body #hire h1 {
-    font-size: 4em;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
+#hire {
+    text-align: center;
+    border: solid 2px white;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
 form {
-    box-sizing: border-box;
-    width: 58.3333333333%;
+    width: 100%;
     margin: 0 auto;
-    border: solid 2px white;
-    border-radius: 10px;
-    padding: 10;
 }
 
 form .field {
+    margin-top: 15px;
+    box-sizing: border-box;
     width: 100%;
     position: relative;
     margin-bottom: 15px;
-}
-
-form .field label {
-    border-radius: 10px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    background: #313A3D;
-    width: 100%;
-    padding: 18px 0;
-    font-size: 1.45em;
-    letter-spacing: 0.075em;
-    -webkit-transition: all 333ms ease-in-out;
-    -moz-transition: all 333ms ease-in-out;
-    -o-transition: all 333ms ease-in-out;
-    -ms-transition: all 333ms ease-in-out;
-    transition: all 333ms ease-in-out;
-}
-
-form .field label+span {
-    font-family: 'SSStandard';
-    opacity: 0;
-    color: white;
-    display: block;
-    position: absolute;
-    top: 12px;
-    left: 7%;
-    font-size: 2.5em;
-    text-shadow: 1px 2px 0 #cd6302;
-    -webkit-transition: all 333ms ease-in-out;
-    -moz-transition: all 333ms ease-in-out;
-    -o-transition: all 333ms ease-in-out;
-    -ms-transition: all 333ms ease-in-out;
-    transition: all 333ms ease-in-out;
+    border-radius: 20px;
 }
 
 form .field input[type="text"],

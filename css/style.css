@@ -144,15 +144,15 @@ h1 a {
     .typewrite {
         font-size: 25px;
         position: relative;
-        text-align: center;
-        left: 22%;
         top: 0;
         margin-top: 30px;
+        left: 25%;
     }
     .about-me img {
         height: auto;
-        width: 50px;
-        left: 50%;
+        width: 75px;
+        margin-left: auto;
+        margin-right: auto;
         position: absolute;
     }
     button {
@@ -164,7 +164,10 @@ h1 a {
         letter-spacing: 2px;
         border: 2px white solid;
         border-radius: 10px;
-        left: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        margin-top: 20px;
     }
     .effect-underline {
         font-size: 21px;
@@ -174,8 +177,9 @@ h1 a {
     }
     .about-para {
         position: relative;
-        font-size: 14px;
+        font-size: 15px;
         top: 60px;
         margin-top: 9em;
+        padding: 10px;
     }
 }

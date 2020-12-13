@@ -3,7 +3,6 @@
     display: table;
     top: 20em;
     left: 20%;
-    padding: 2em 0 4em;
     max-width: 1000px;
     list-style: none;
     margin-top: 5em;
@@ -18,7 +17,6 @@
     overflow: hidden;
     margin: 10px 1%;
     min-width: 240px;
-    max-width: 240px;
     height: 240px;
     width: 48%;
     text-align: center;
@@ -157,21 +155,18 @@ figure.effect-sarah:hover p {
     transform: translate3d(0, 0, 0);
 }
 
-@media only screen and (max-width-700) {
+@media only screen and (max-width:700px) {
     .grid {
-        margin-top: 3em;
+        min-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         left: 0;
-        text-align: center;
-        max-width: 500px;
-        padding: 0;
-        display: none;
     }
     .grid figure {
-        height: 120px;
-        width: 25%;
-        max-width: 120px;
-        max-height: 120px;
+        box-sizing: none;
+        min-width: 100%;
+        padding: 150px;
+        height: 300px;
         margin: 0;
-        float: none;
     }
 }
