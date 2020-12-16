@@ -1,4 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.butt{
+    display: flex;
+    justify-content: center;
+}
 
+.name .topname{
+    font-size: 45px; 
+    margin-top: 80px;
+}
 
 button {
     position: absolute;
@@ -16,7 +32,7 @@ button {
     cursor: pointer;
     transition: 0.08s ease-in;
     -webkit-transition: 0.08s ease-in;
-    margin-left: 24em;
+   
     margin-top: 10px;
 }
 
@@ -85,6 +101,7 @@ h1 a {
    
     text-align: center;
     position: relative;
+    font-size: 2.5em;
 }
 
 .effect-underline:after {
@@ -128,6 +145,14 @@ h1 a {
 }
 
 @media only screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        list-style: none;
+        font-family: 'Ubuntu', sans-serif;
+    }
     .about-me img {
         height: auto;
         width: 75px;
@@ -135,18 +160,19 @@ h1 a {
         margin-right: auto;
         position: absolute;
     }
+    .butt{
+        display: flex;
+        justify-content: center;
+    }
     button {
-        height: 40px;
-        width: 120px;
+        height: 50px;
+        width: 130px;
         padding: 3px 3px;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 18px;
         letter-spacing: 2px;
         border: 2px white solid;
         border-radius: 10px;
-        margin-right: auto;
-        margin-left: auto;
-        left: 0;
         margin-top: 20px;
     }
     .effect-underline {
@@ -158,8 +184,6 @@ h1 a {
     .about-para {
         position: relative;
         font-size: 15px;
-        top: 60px;
-        margin-top: 9em;
         padding: 10px;
     }
 }
