@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <link rel="stylesheet" href="css/progress.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/box.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
@@ -59,10 +60,49 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-    <div class="wrapper" id="about">
-        <h1><a href="#" class="effect-underline">My Interests</a>
+    <div class="wrapper">
+        <h1><a href="#" class="effect-underline">My Skills</a>
         </h1>
     </div>
+    <div class="container">
+        <div class="bar-1">
+        <div class="title">Flutter/Dart</div>
+        <div class="bar" data-width="65%">
+          <div class="bar-inner">
+            
+          </div>
+          <div class="bar-percent">65%</div>
+        </div>
+        </div>
+        <div class="bar-1">
+        <div class="title" style="color: #084c61;">Adobe Photoshop</div>
+        <div class="bar" data-width="85%">
+          <div class="bar-inner" style="background: #084c61;">
+            
+          </div>
+          <div class="bar-percent">85%</div>
+        </div>
+        
+        </div>
+        <div class="bar-1">
+        <div class="title" style="color: #525252;">MERN Stack</div>
+        <div class="bar" data-width="95%">
+          <div class="bar-inner" style="background: #525252;">
+            
+          </div>
+          <div class="bar-percent">95%</div>
+        </div>
+        </div>
+        <div class="bar-1">
+        <div class="title" style="color: #5a68a5">Python</div>
+        <div class="bar" data-width="75%">
+          <div class="bar-inner" style="background: #5a68a5;">
+            
+          </div>
+          <div class="bar-percent">75%</div>
+        </div>
+        </div>
+      </div>
 
 
    
@@ -104,7 +144,13 @@
 
 });
     </script>
-    
+    <script>
+        $(".bar").each(function(){
+  $(this).find(".bar-inner").animate({
+    width: $(this).attr("data-width")
+  },2000)
+});
+    </script>
 
 
 
