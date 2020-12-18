@@ -12,16 +12,21 @@
     <link rel="stylesheet" href="css/progress.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/box.css" type="text/css">
+    <link rel="stylesheet" href="css/spinner.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
-
-
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <title>Portfolio</title>
 </head>
 
 <body>
+    <div class="wrapper-spinner">
+        <div class="spinner">
+          <div class="spinner--bar"></div>
+          <div class="spinner--bar"></div>
+          <div class="spinner--bar"></div>
+        </div>
+      </div>
 
     <nav class="nav">
         <div class="container">
@@ -105,7 +110,10 @@
       </div>
 
 
-   
+      <div class="wrapper">
+        <h1><a href="#" class="effect-underline">Projects & Accomplishements</a>
+        </h1>
+    </div>
    
 
 
@@ -119,12 +127,21 @@
     </div>
     <!--.col-->
 
+   
+
 
 
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).on("load", function(){
+        
+            $('.wrapper-spinner').fadeOut('slow', function () {
+            });
+    });
+</script>
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
