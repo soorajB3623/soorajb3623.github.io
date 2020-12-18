@@ -2,19 +2,25 @@
 <html lang="en">
 
 <head>
+    <!--Required Meta tags-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="my portfolio" />
     <meta name="keywords" content="test" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+    <!--Custom css style sheets-->
     <link rel="stylesheet" href="css/nav.css" type="text/css">
     <link rel="stylesheet" href="css/progress.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/box.css" type="text/css">
     <link rel="stylesheet" href="css/spinner.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
-    
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <title>Portfolio</title>
 </head>
@@ -117,7 +123,7 @@
    
 
 
-    <!--.col-->
+    <!--My accounts section-->
     <div class="" style="bottom: 0px; text-align: center;">
         <br class="clearfix">
         <a href="#" class="snip1472"><i class="fab fa-linkedin-in"></i></a>
@@ -125,49 +131,11 @@
         <a href="#" class="snip1472"><i class="fab fa-telegram-plane"></i></a>
         <a href="#" class="snip1472"><i class="fab fa-google"></i></a>
     </div>
-    <!--.col-->
-
-   
 
 
-
-    <!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-    <!-- Function used to shrink nav bar removing paddings and adding black background -->
-<script>
-    $(window).on("load", function(){
-        
-            $('.wrapper-spinner').fadeOut('slow', function () {
-            });
-    });
-</script>
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
-    <script>
-        $('.navTrigger').click(function() {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
-
-});
-    </script>
-    <script>
-        $(".bar").each(function(){
-  $(this).find(".bar-inner").animate({
-    width: $(this).attr("data-width")
-  },2000)
-});
-    </script>
+    <!--Loading all Jquery external files-->
+   <script type="text/javascript" src="js/nav.js"></script>
+   <script type="text/javascript" src="js/progress.js"></script>
 
 
 
