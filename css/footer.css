@@ -1,6 +1,4 @@
 
-
-
 .snip1472 {
     position: relative;
     font-size: 25px;
@@ -51,4 +49,11 @@
     border-color: #c0392b transparent #c0392b transparent;
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+@media only screen and (max-width: 768px) {
+.snip1472{
+    font-size: 15px;
+    margin: 0px 5px;
+}
+
 }

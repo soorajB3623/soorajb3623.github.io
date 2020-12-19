@@ -21,13 +21,13 @@
   
   
   .card:hover {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     transition: 0.4s ease-out;
   }
   
   .card:hover ~ .card {
     position: relative;
-    left: 50px;
+    left: 20px;
     transition: 0.4s ease-out;
   }
   
@@ -81,4 +81,16 @@
     transition: 0.4s ease-out;
   }
   
-  
+  @media only screen and (max-width: 768px) {
+
+.container-card{
+    height: 150px;
+    display: table;
+}
+    .card{
+        display: table;
+        margin-top: 20px;
+        width: auto;
+
+    }
+  }
