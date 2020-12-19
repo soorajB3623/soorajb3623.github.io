@@ -80,6 +80,17 @@
     width: 120px;
     transition: 0.4s ease-out;
   }
+  .project-title{
+     
+      text-decoration-line: none;
+      font-size: 20px;
+      margin: 00px  10px ;
+      font-weight: 300;
+  }
+  .project-title a{
+      text-decoration: none;
+      color: #47B10A;
+  }
   
   @media only screen and (max-width: 768px) {
 
