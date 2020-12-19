@@ -130,12 +130,9 @@ body {
 }
 
 @media screen and (max-width:768px) {
-    .nav {
-      
-        line-height: 0px;
-    }
+    
     .nav div.logo a {
-       line-height: 5px;
+        line-height: 10px;
        font-size: 2.1rem;
     }
     .navTrigger {
