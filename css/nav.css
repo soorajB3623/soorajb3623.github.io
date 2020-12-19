@@ -113,10 +113,12 @@ body {
 #topname{
     font-size: 45px;
      margin-top: 80px;
+     font-weight: 400;
 }
 #role{
     font-size: 25px;
-     margin: 15px 0px
+     margin: 15px 0px;
+     font-weight: 400;
 }
 
 
@@ -396,7 +398,7 @@ body {
     font-size: 20px;
 }
 
-@media all and (max-width:700px) {
+@media all and (max-width:768px) {
     .myP {
         padding: 2%;
     }

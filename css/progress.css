@@ -1,44 +1,44 @@
-.container {
-    margin-top: 20px;
-   
-  }
-  
-  h2 {
-    color: #fff;
-  }
-  
-  .title {
-    font-weight: bold;
-    font-size: 20px;
-    color: #db3a34;
-  }
-  
-  .bar {
-    width: 90%;
-    height: 25px;
-    background: #fff;
-    border-radius: 25px;
+.progress{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.graph-container {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
+ 
+ .graph-donut {
     position: relative;
-    transition: all 2s linear;
+    display: inline-block;
+    width: 160px;
     text-align: center;
-  }
-  
-  .bar-1{
-    width: 80%;
-    margin: 10px auto 25px;
-  }
-  
-  .bar-inner {
-    width: 0;
-    height: 25px;
-    line-height: 35px;
-    background: #db3a34;
-    border-radius: 25px 0 0 25px;
-  }
-  
-  .bar-percent {
+ }
+ 
+ .graph-donut canvas {
     position: absolute;
-    right: 10px;
-    top: 5px;
+    top: 0;
+    left: 0;
+ }
+ 
+ .graph-title {
+    margin-top: 75px;
+    text-align: center;
     font-size: 18px;
-  }
+    color: #fff;
+    font-weight: 300;
+ }
+ 
+ .percent {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    margin-top: 65px;
+ }
+ 
+ .percent:after {
+    content: '%';
+ }
