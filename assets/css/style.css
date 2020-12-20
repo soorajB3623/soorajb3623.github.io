@@ -204,12 +204,12 @@ h1 a {
     text-align: center;
     display: table;
     width: auto;
+    margin: 20px;
 } 
 .cartoon{
     margin: 10px 0px;
 }
     .about-para {
-        position: relative;
         font-size: 15px;
         padding: 20px;
     }
