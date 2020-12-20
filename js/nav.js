@@ -1,6 +1,6 @@
 
 //navbar scroll animation
-$(window).scroll(function() {
+$(window).on('scroll',function() {
     if ($(document).scrollTop() > 50) {
         $('.nav').addClass('affix');
         console.log("OK");
@@ -10,7 +10,7 @@ $(window).scroll(function() {
 });
 
 //mobile mode navtrigger
-$('.navTrigger').click(function() {
+$('.navTrigger').on('click',function() {
     $(this).toggleClass('active');
     console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
@@ -19,8 +19,16 @@ $('.navTrigger').click(function() {
 });
 
 //mobile navtrigger closing
-$('.navlinks a').click(function(){
+$('.navlinks a').on('click',function(){
     $("#mainListDiv").removeClass('show_list');
     $("#mainListDiv").fadeIn();
     $('.navTrigger').toggleClass('active');
 });
+
+//Contact forms
+$(document).ready(function(){
+    $('.flip').click(function(){
+      $('.cont-flip').toggleClass('flipped');
+      return false;
+    });
+  });

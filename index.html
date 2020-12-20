@@ -26,6 +26,14 @@
 </head>
 
 <body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
     <!-- loading Spinner -->
     <div class="wrapper-spinner">
         <div class="spinner">
@@ -183,20 +191,40 @@
                 <h3 class="title-card" style="margin-left: 35px; font-size: 22px; font-style: normal;">Web Apps</h3>
             </div>
           
-            <h3 class="sub-title" style="margin: 0px 10px; padding: 0px;">Young Innovators programme developed by startegic council and
+            <h2 class="project-title"><a href="#">Phoenix Travels</a></h2>
+            <h3 class="sub-title" style="margin: 0px 10px; padding: 15px; font-style: normal;">Young Innovators programme developed by startegic council and
               is called a normal think to expamd and go to do the things out of the box
           </h3>
           </div>
     </div>
     
       <div class="wrapper">
-        <h1><a href="#" class="effect-underline">Get in touch</a>
+        <h1><a href="#" class="effect-underline">Leave me something!</a>
         </h1>
     </div>
+
+     <!--Contact me-->
+    <div class="cont-contactBtn">
+        <div class="cont-flip">
+            <div class="front">
+                <a href="#" class="btn btn-white flip">Send Message</a>
+            </div>
+            <div class="back">
+                <a href="#" class="flip close"></a>
+                <form class="contact-form" method="POST" name="contactForm">
+                    <input class="gutter" type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Email" name="email">
+                    <textarea name="" id="" placeholder="Leave a message" name="message"></textarea>
+                    <input type="submit" value="Send" class="submit-button">
+                </form>
+            </div>
+        </div>
+        </div>
       
 
     <!--My accounts section-->
     <div class="" style="bottom: 0px; text-align: center;">
+        <h4 style="color: white; font-size: 15px; font-weight: 400; margin-top: 20px;">Connect me on !</h4>
         <br class="clearfix">
         <a href="#" class="snip1472"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="snip1472"><i class="fab fa-instagram"></i></a>
@@ -208,6 +236,7 @@
     <!--Loading all Jquery external files-->
    <script type="text/javascript" src="js/nav.js"></script>
    <script type="text/javascript" src="js/progress.js"></script>
+   <script type="module" src="js/server.js"></script>
 
 </body>
 
