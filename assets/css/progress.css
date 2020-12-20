@@ -42,3 +42,10 @@
  .percent:after {
     content: '%';
  }
+ @media (max-width:768){
+    .progress{
+       display: table;
+       width: auto;
+    }
+
+ }

@@ -1,15 +1,10 @@
+
 //Loading spinner 
 $(window).on("load", function(){    
     $('.wrapper-spinner').fadeOut('slow', function () {
     });
 });
 
-//Skill bar
-        $(".bar").each(function(){
-  $(this).find(".bar-inner").animate({
-    width: $(this).attr("data-width")
-  },2000)
-});
 
 //progress
 /*----------------------------------------------   
@@ -81,7 +76,14 @@ $(window).on("load", function(){
        */
       var drawCircle = function(color, lineWidth, percent) {
         percent = Math.min(Math.max(0, percent || 1), 1);
-  
+       if(window.innerWidth >=768){
+         radius=60
+       }
+       else{
+         radius=40
+         let myElement=document.querySelector('.progress');
+         myElement.style.display='table';
+       }
         ctx.beginPath();
         ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, false);
   
