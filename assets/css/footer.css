@@ -1,10 +1,11 @@
   
   
   .cont-contactBtn {
+    display: flex;
     height: 359px;
     margin: 0 auto;
+    justify-content: center;
     width: 550px;
-    position: relative;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -o-perspective: 800px;
@@ -24,8 +25,8 @@
     width: 100%;
   }
   .cont-contactBtn .cont-flip .front, .cont-contactBtn .cont-flip .back {
-    display: block;
     margin: 0;
+    justify-content: center;
     height: 100%;
     width: 100%;
     position: absolute;
