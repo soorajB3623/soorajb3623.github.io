@@ -1,6 +1,7 @@
   
   
   .cont-contactBtn {
+    max-width: 768px;
     display: flex;
     height: 359px;
     margin: 0 auto;
