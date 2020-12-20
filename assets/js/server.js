@@ -1,6 +1,3 @@
-
-import axios from 'axios'; 
- 
  // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
@@ -16,22 +13,13 @@ import axios from 'axios';
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 
-let contact={
-    name:$("#name").value,
-    email:$('#email').value,
-    message: $('#message').value
-}
-//sending req via axios
-axios.post('https://portfolio-1a1f9-default-rtdb.firebaseio.com/contact.json',contact).then((value) => {
-console.log(value);
-contactForm.reset();
-}).catch((err) => {
-    console.log(err)
-})
+  //create firebase database reference
+var dbRef = firebase.database();
+var contactsRef = dbRef.ref('contact');
 
 
-/*//save contact
-document.querySelector('.contactForm')
+//save contact
+document.querySelector('.submit-button')
   .addEventListener("click", function( event ) {  
     event.preventDefault();
     if( document.querySelector('#name').value != '' 
@@ -41,9 +29,10 @@ document.querySelector('.contactForm')
         email: document.querySelector('#email').value,
         message:document.querySelector('#message').value
       });
+      alert('Will catch you')
       contactForm.reset();
     } else {
       alert('Please fill atlease name or email!');
     }
-  }, false);*/
+  }, false);
 
