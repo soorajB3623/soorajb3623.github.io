@@ -32,7 +32,7 @@ document.querySelector('.submit-button')
       alert('Will catch you')
       contactForm.reset();
     } else {
-      alert('Please fill atlease name or email!');
+      alert('Please fill atleast name or email!');
     }
   }, false);
 

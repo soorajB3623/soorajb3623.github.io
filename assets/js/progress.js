@@ -6,6 +6,8 @@ $(window).on("load", function(){
 });
 
 
+
+
 //progress
 /*----------------------------------------------   
 -easyPieChart

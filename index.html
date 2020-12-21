@@ -18,8 +18,12 @@
     <link rel="stylesheet" href="assets/css/spinner.css" type="text/css">
     <link rel="stylesheet" href="assets/css/footer.css" type="text/css">
 
+    <!--Scroll animation CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <title>Portfolio</title>
@@ -27,12 +31,12 @@
 
 <body>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<!--<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-database.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+ TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries 
+<!--<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>-->
 
     <!-- loading Spinner -->
     <div class="wrapper-spinner">
@@ -46,7 +50,7 @@
 
       <!-- Navigation Bar -->
     <nav class="nav">
-        <div class="container-nav">
+        <div class="container-nav"  >
             <div class="logo">
                 <a href="#">Portfolio</a>
             </div>
@@ -66,53 +70,56 @@
         </div>
     </nav>
 
-    <img class="photo" src="assets/images/me.jpg" alt="">
+    <img class="photo" src="assets/images/me.jpg" alt="" data-aos='fade-up' data-aos-anchor="navlinks">
 
-       <h3 class='name' id='topname'>Sooraj Bhaskaran</h3>
-       <h3 class="name" id='role'>Full Stack Developer</h3>
+       <h3 class='name' id='topname' data-aos='fade-up' data-aos-anchor="navlinks">Sooraj Bhaskaran</h3>
+       <h3 class="name" id='role' data-aos='fade-up' data-aos-anchor="navlinks">Full Stack Developer</h3>
    
-    <div class="butt"><button class="slide">&nbsp;</button></div>
-    <div class="wrapper" id="about">
+    <div class="butt">
+        
+            <button class="slide" onclick="window.location.href='https://drive.google.com/file/d/17yFXLUD9KKe6Sn3UHwfe9LpOyAK67gjj/view?usp=sharing'">&nbsp;</button>
+        
+    </div>
+    <div class="wrapper">
         <h1><a href="#" class="effect-underline">About
                 me</a>
         </h1>
     </div>
      
     <!-- About section -->
-    <div class="about-section">
-        <img class="cartoon" src="assets/images/ab-img.png" alt="a pic">
+    <div class="about-section" data-aos='fade-up' data-aos-anchor="wrapper">
+        <img  class="cartoon" src="assets/images/ab-img.png" alt="a pic" >
         <p class="about-para" >
             Hey there, I’m Sooraj Bhaskaran. I am a CS Undergrad from Government Engineering College Thrissur. I have a great passion for Coding and Development and is also a Freelance Developer. I have relevant experience in Flutter and loves making creative apps. I am also a MERN Stack Developer. I’m a passionate learner and likes to experiment in all possible ways. Besides these I love music. Connect me for any services!
         </p>
     </div>
-    
     <div class="wrapper" id="skills">
         <h1><a href="#" class="effect-underline">My Skills</a>
         </h1>
     </div>
 
      <!-- My skill section -->
-    <div class="progress">
+    <div class="progress" data-aos='fade-up' data-aos-anchor="about-para">
         <div class="graph-container">
-            <div class="graph-donut" data-percent="80" >
+            <div class="graph-donut" data-percent="85" >
                <span class="percent"></span>
             </div>
             <h3 class="graph-title">Flutter/Dart</h3>
          </div>
          <div class="graph-container">
-            <div class="graph-donut" data-percent="60" >
+            <div class="graph-donut" data-percent="80" >
                <span class="percent"></span>
             </div>
             <h3 class="graph-title">MERN Stack</h3>
          </div>
          <div class="graph-container">
-            <div class="graph-donut" data-percent="80" >
+            <div class="graph-donut" data-percent="70" >
                <span class="percent"></span>
             </div>
             <h3 class="graph-title">Adobe Photoshop</h3>
          </div>
          <div class="graph-container">
-            <div class="graph-donut" data-percent="70" >
+            <div class="graph-donut" data-percent="80" >
                <span class="percent"></span>
             </div>
             <h3 class="graph-title">Python</h3>
@@ -128,7 +135,7 @@
 
 
     <!--Achievements-->
-    <div class="container-card">
+    <div class="container-card" data-aos='fade-up' data-aos-anchor="progress" id='card'>
         <div class="card">
           <h3 class="title-card">Young Innovators Program</h3>
           <div class="bar-card">
@@ -136,8 +143,8 @@
             <div class="filledbar"></div>
             
           </div>
-          <h3 class="sub-title">Young Innovators programme developed by startegic council and
-            is called a normal think to expamd and go to do the things out of the box
+          <h3 class="sub-title">Adjudged as the the winners of Young Innovators Program -2019.
+              Our idea PrecisionX which is a smartphone guided measurement tool was selected among the 101 ideas selected from whole across Kerala.
         </h3>
         </div>
          <div class="card">
@@ -146,20 +153,18 @@
             <div class="emptybar"></div>
             <div class="filledbar"></div>
           </div>
-          <h3 class="sub-title">Young Innovators programme developed by startegic council and
-            is called a normal think to expamd and go to do the things out of the box
+          <h3 class="sub-title">Regional Finalists of Reboot Kerala Hackathon. Our project parava was selected among the 15 ideas in final round of Reboot Kerala Hackathon.
+
         </h3>
         </div>
         <div class="card">
-            <h3 class="title-card">Young Innovators Program</h3>
+            <h3 class="title-card">Chief Technical Officer</h3>
             <div class="bar-card">
               <div class="emptybar"></div>
               <div class="filledbar"></div>
               
             </div>
-            <h3 class="sub-title">Young Innovators programme developed by startegic council and
-              is called a normal think to expamd and go to do the things out of the box
-          </h3>
+            <h3 class="sub-title">Selected as Chief Technical Officer Innovation and Entrprenuership Development Centre GECT Chapter
           </div>
       </div>
 
@@ -169,36 +174,35 @@
     </div>
 
       <!--Projects-->
-    <div class="container-card" style="margin:auto; justify-content: center; height: 600px;">
-        <div class="card" style="height: 580px;">
+    <div class="container-card" style="margin:auto; justify-content: center; height: 600px;"data-aos='fade-up' data-aos-anchor="card" id='work-card'>
+        <div class="card" style="height: 400px;">
             <div style="display: flex; margin:10px 10px">
-                <img src="assets/images/flutter.jpg" alt="flutter logo" style="height: 38px; width:37px; ">
+                <img src="assets/images/flutter.svg" alt="flutter logo" style="height: 34px; width:37px; ">
                 <h3 class="title-card" style="margin-left: 35px; font-size: 22px; font-style: normal;">Mobile Apps</h3>
             </div>
-            <h2 class="project-title"><a href="#">TurboLog</a></h2>
-            <h3 class="sub-title" style="margin: 0px 10px; padding: 15px; font-style: normal;">Young Innovators programme developed by startegic council and
-              is called a normal think to expamd and go to do the things out of the box
+            <h2 class="project-title"><a href="https://github.com/sbkaiprath/TurboCharm">TurboLog</a></h2>
+            <h3 class="sub-title" style="margin: 0px 10px; padding: 15px; font-style: normal;">Currently working on this application aimed at connecting for automobile modification owners to their customers.
+
           </h3>
-          <h2 class="project-title"><a href="#">Parava Guest App</a></h2>
-            <h3 class="sub-title" style="margin: 0px 10px; padding: 15px; font-style: normal;">Young Innovators programme developed by startegic council and
-              is called a normal think to expamd and go to do the things out of the box
+          <h2 class="project-title"><a href="https://github.com/sbkaiprath/Parava-The-GuestApp">Parava Guest App</a></h2>
+            <h3 class="sub-title" style="margin: 0px 10px; padding: 15px; font-style: normal;">Successfully implemented the application for connecting tourist service providers to their customers as a part of Reboot Kerala Hackathon by ASAP and Government of Kerala.
+
           </h3>
         </div>
-          <div class="card" style="height: 580px;">
+          <div class="card" style="height: 400px;">
             <div style="display: flex; margin:10px 10px">
-                <img src="assets/images/mern.png" alt="mern logo" style="height: 38px; width:37px; ">
+                <img src="assets/images/webdev.svg" alt="mern logo" style="height: 38px; width:37px; ">
                 <h3 class="title-card" style="margin-left: 35px; font-size: 22px; font-style: normal;">Web Apps</h3>
             </div>
           
-            <h2 class="project-title"><a href="#">Phoenix Travels</a></h2>
-            <h3 class="sub-title" style="margin: 0px 10px; padding: 15px; font-style: normal;">Young Innovators programme developed by startegic council and
-              is called a normal think to expamd and go to do the things out of the box
+            <h2 class="project-title"><a href="https://github.com/sbkaiprath/phoenix-travels">Phoenix Travels</a></h2>
+            <h3 class="sub-title" style="margin: 0px 10px; padding: 15px; font-style: normal;">Successfully completed a travels application as a part of College Mini Project.
           </h3>
           </div>
     </div>
     
-    <div class="wrapper" id="contact">
-        <h1><a href="#" class="effect-underline">Leave me something!</a>
+    <div class="wrapper" id="contact" style="margin-top: 0px;">
+        <h1><a href="#" class="effect-underline">Have something to discuss!</a>
         </h1>
     </div>
 
@@ -221,8 +225,8 @@
     </div>-->
 
     <!--My accounts section-->
-    <div class="" style="bottom: 0px; text-align: center;">
-        <h4 style="color: white; font-size: 15px; font-weight: 400; margin-top: 20px;">Connect me on !</h4>
+    <div class="" style="bottom: 0px; text-align: center;" data-aos='fade-up' data-aos-anchor="work-card">
+        <h4 style="color: white; font-size: 17px; font-weight: 400; margin-top: 20px;">Connect me on !</h4>
         <br class="clearfix">
         <a href="https://www.linkedin.com/in/sooraj-bhaskaran-2b2780168/" class="snip1472"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://twitter.com/sbkaiprath" class="snip1472"><i class="fab fa-twitter"></i></a>
@@ -230,11 +234,19 @@
         <a href="https://github.com/sbkaiprath" class="snip1472"><i class="fab fa-github"></i></a>
     </div>
 
-
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+      
+    </script>
     <!--Loading all Jquery external files-->
    <script type="text/javascript" src="assets/js/nav.js"></script>
+   <script type="text/javascript" src="assets/js/scrollEvent.js"></script>
    <script type="text/javascript" src="assets/js/progress.js"></script>
    <script type="text/javascript" src="assets/js/server.js"></script>
+
+  
 
 </body>
 
